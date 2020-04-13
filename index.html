@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>John S. Rajeski, Ed.D.</title>
+  <!-- Load Google Fonts -->
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>John S. Rajeski, Ed.D.</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About" class="your-active-class">
+      <div class="landing__container">
+        <h2>About</h2>
+        <p>Welcome; Willkmmen; ようこそ! Passionate about higher education and technology, my background is an
+          interconnected career path. Blending my executive; learning and software expertise, my objective is
+          combining three interrelated disciplines; a) Project Management (implementation); b) Human
+          Centric-Design (collaboration); and, c) Strategic Organizational Behavior (leadership) towards developing
+          data-focused products; and, creating applications for both technical end-users and non-technical
+          audiences in a remote-role as a part of a dynamic, global team.</p>
+
+        <p>Paying-it-forward: During the US Subprime Financial Crisis, transitioning from an IT Executive to Higher Ed
+          availed me the opportunity to give back and weather this major economic downturn. With an MBA, as an
+          undergraduate professor while teaching in Asia; concurrently, I earned a second master’s degree (Teaching),
+          and, then, a Doctorate, Education, Organizational Change and Leadership (OCL) from the University of Southern
+          California (USC). Researching and writing my dissertation expanded interests in data analysis; visualization;
+          UX design and rekindled my (long-standing) desire to learn coding.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Background">
+      <div class="landing__container">
+        <h2>Background</h2>
+        <p><i>Silicon Valley</i>: My mentors are mainly technologists who connected their research to creating
+          practical, business solutions. With their support and my own initiative, as an Executive, some accomplishments
+          included – a) Post-merger, ISV Partner Program reorganization; b) Relaunched a Content/Commerce Management
+          Partner Program; c) ERP Product Management; d) Led an Enterprise, Pan-Asian market entry; e) Headed Mobile-<a
+            href="assets/files/mobile.jpg" target="_blank" class="button" download>mobile</a> application <a
+            href="assets/files/research.jpg" target="_blank" class="button" download>research</a>; and, f) Established a
+          Back Office operation (Hyderabad, India).</p>
+
+        <p><i>2019 onward</i>: Certification in; a) <u>Data Science</u>; b) Business Analytics</u>; c) Secure and
+          Private AI Scholarship Challenge Recepient; and, d) (current) <u>Full-Stack Web Development</u> coursework.
+        </p>
+
+        <p><i>Working backwards</i>: Additional expertise includes data analysis; survey design; evaluation;
+          <a href="assets/files/pite.pdf" target="_blank" class="button" download>presentation</a>;
+          cross-cultural knowledge; leading divergent individuals and groups; empathy, e.g., the ability
+          to listen and advocate another’s perspective; accountability and ownership; positive mindset; can-do attitude
+          with proven global, career development <a href="assets/files/book.pdf" target="_blank" class="button"
+            download>skills</a> and vision underpinned by the leader-servant model.</p>
+      </div>
+      <div class="grid__item">
+        <table>
+          <thead>
+            <tr>
+              <th><u>Skillset</u></th>
+              <th><u>Expertise</u></th>
+            </tr>
+          </thead>
+          <tr>
+            <td><i class="fab fa-css3"> <img src="assets/img/css.png" alt="CSS" width="30"></i></td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-html5"><img src="assets/img/html.png" alt="HTML" width="30"></i></td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-js"><img src="assets/img/js.png" alt="HTML" width="30"></i></td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-jn"><img src="assets/img/jn.png" alt="HTML" width="30"></i></td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-mdb"><img src="assets/img/mdb.png" alt="HTML" width="30"></i></td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-p"><img src="assets/img/p.png" alt="HTML" width="40"></i></td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-r"><img src="assets/img/r.png" alt="HTML" width="30"></i></td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-s"><img src="assets/img/s.png" alt="HTML" width="30"></i></td>
+            <td>Intermediate</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="section3" data-nav="Projects">
+      <div class="landing__container">
+        <h2>Projects</h2>
+        <div class="grid__item">
+          <!-- Grid items will live here -->
+          <h3>US Census/Gun Ownership Correlations</h3>
+          <p>Python analysis regarding what (if any) correlates exist between state of
+            resident and gun purchases.</p>
+          <a href="https://github.com/rajeski/Investigate_US_Census_Gun_Datasets" target="_blank">
+            <img src="assets/img/github.svg" alt="Github" width="30"></a>
+        </div>
+        <div class="grid__item">
+          <h3>A/B eCommerce Test Results</h3>
+          <p>Jupyter notebook presenting the results of an A/B test run by an
+            e-commerce website.</p>
+          <a href="https://github.com/rajeski/A_B_Analysis_Test_Results" target="_blank">
+            <img src="assets/img/github.svg" alt="Github" width="30"></a>
+        </div>
+        <div class="grid__item">
+          <h3>Chicago/DC/NYC Bikeshare Data</h3>
+          <p>User-requested, bikeshare information ranging from what hour; month; route; and/or weekday is the most
+            popular.</p>
+          <a href="https://github.com/rajeski/Explore_US_Bikeshare_Data" target="_blank">
+            <img src="assets/img/github.svg" alt="Github" width="30"></a>
+        </div>
+        <div class="grid__item">
+          <h3>Global Weather Trends (Chicago/Tokyo)</h3>
+          <p>SQL-analysis of global weather trends between two cities.</p>
+          <a href="https://github.com/rajeski/explore_weather_trends" target="_blank">
+            <img src="assets/img/github.svg" alt="Github" width="30"></a>
+        </div>
+        <div class="grid__item">
+    </section>
+    <section id="section4" data-nav="Recognition">
+      <div class="landing__container">
+        <h2>Recognition</h2>
+
+        <p>"Prior to this course, I trusted almost everything in media... I just received things
+          or knowledge without question... I am thankful I took your class; learned and improved
+          my critical thinking skills.</p>
+
+        <p>"...because I want to express my gratitude... you always gave me a new perspective
+          and I was inspired by your lectures. In every class, I always gained some knowledge or
+          practical skills as you gave us the opportunity to think about our own responsibilities as scholars..."</p>
+
+        <p>"I appreciate everything you have done for us. Thank you very much."</p>
+
+        <p>"Thank you for all of your helpful advice."</p>
+
+        <p>"Thank you again for the great lectures you have given me. You have been a great teacher
+          and a great mentor!"</p>
+
+        <p>"Having taken your class and thoroughly enjoying each and every session, I sincerely believe that it
+          helped to think critically. I really believe that the subjects covered by you in the class on Global
+          Business Cultures could be taken up by anyone irrespective of the field/discipline and help them refine their
+          approach towards society and enhance their decision-making."</p>
+
+        <p>"To conclude, I would like to say thank you again for your help and mentorship... Because you helped me
+          grow so much and guided me in the right direction.., I was able to successfully transfer to... where I
+          was able to so fortunately work as a research assistant for four professors in the management department, the
+          experience of which was arguably the most critical factor in getting accepted to the Ph.D. program of my
+          choice on a full-scholarship."</p>
+      </div>
+    </section>
+    <div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+        <label for="region">Region</label>
+        <select id="Region" name="Region">
+          <option value="Africa">Africa</option>
+          <option value="Asia">Asia</option>
+          <option value="Australia/NZ">Australia/NZ</option>
+          <option value="Europe">EU</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Blank">Blank</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject"
+          placeholder="Email addresses will be NOT harvested and/or sold to third-parties but please include it in the body of your reply."
+          style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </main>
+  <div>
+    <p>Carpe Diem!</p>
+    <button onclick="getElementById('demo').innerHTML=Date()" class="button">Make the most of <em>YOUR</em>
+      Time!</button>
+
+    <p id="demo"></p>
+
+  </div>
+  <footer class="page__footer">
+    <p>Find Me:</p>
+    <div role="contentinfo" class="social-media">
+      <a href="https://linkedin.com/in/johnsrajeski" target="_blank" aria-label="Learn
+      more about John S. Rajeski, Ed.D. on LinkedIn">
+        <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_item">
+      </a>
+      <p>&copy John S. Rajeski, Ed.D., &copy Convergence for a Converging World</p>
+      <script src="js/app.js"></script><!-- js -->
+      <script src="js/tota11y.min.js"></script>
+    </div>
+  </footer>
+  <!--tota11y (https://github.com/Khan/tota11y/releases/tag/0.1.6) -->
+</body>
+
+</html>
